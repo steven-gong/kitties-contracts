@@ -14,3 +14,17 @@ There are three smart contracts:
 - Kitty Coin: A ERC 20 smart contract that can issue KittyCoin, manages account KittyCoin balances and KittyCoin transfer between accounts.
 - Kitties: A ERC 721 nft smart contract that can manage kitties owned by accounts and transfer kitties between accounts.
 - Kitty Market: A smart contract that can adopt and trade Kitties using KittyCoin.
+
+Screenshots:
+
+- Smart Contracts build results
+![Contracts build results](./screenshots/contracts_build_results.png)
+
+- Kitty Coin Contract
+![kitty coin contract](./screenshots/kitty_coin.png)
+
+- Kitties Contract
+![kitties contract](./screenshots/kitties.png)
+
+- Kitty Market Contract
+![kitty market contract](./screenshots/kitty_market.png)
