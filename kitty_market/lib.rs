@@ -128,6 +128,7 @@ mod kitty_market {
                 return Err(Error::AlreadyListedForAdoption);
             }
 
+            // TODO: Fix approve call
             let list_adopt_result = self.kitties.approve(self.kitties_contract_account, kitty_id);
             if list_adopt_result.is_err() {
                 return Err(Error::ListAdoptNotApproved);
@@ -188,6 +189,7 @@ mod kitty_market {
                 return Err(Error::AlreadyListedForSale);
             }
 
+            // TODO: Fix approve call
             let approve_result = self.kitties.approve(self.kitties_contract_account, kitty_id);
             if approve_result.is_err() {
                 return Err(Error::ListSaleNotApproved);
@@ -251,6 +253,9 @@ mod kitty_market {
 
             Ok(())
         }
+
+        // TODO: Add a call to unlist kitty from adoption list
+        // TODO: Add a call to unlist kitty from sale list
     }
 
     // #[cfg(test)]
